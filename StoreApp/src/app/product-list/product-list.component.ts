@@ -12,9 +12,19 @@ export class ProductListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.products = [{name: 'Phone XL', description:'Phone XL description'},
-    {name: 'Phone Mini', description:'Phone Mini description'},
-    {name: 'Phone Standard', description:''}];
+    this.products = [new Product('Phone XL', 'Phone XL description', 10),
+    new Product('Phone Mini', 'Phone Mini description', 0),
+    new Product('Phone Standard', 'Phone Standard description', 2)];
+  }
+
+  buy(product:Product) {
+    console.log('Buy');
+    console.log(product);
+  }
+
+  notify(product:Product) {
+    console.log('Notify');
+    console.log(product);
   }
 
 }
