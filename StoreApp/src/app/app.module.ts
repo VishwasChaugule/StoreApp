@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { CheckoutComponent } from './checkout.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CheckoutComponent,
+    PageNotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
